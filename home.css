@@ -113,7 +113,6 @@
 
 .home-services {
   /* background-color: #E8F5FF; */
-  width: 100%;
   padding: 80px;
   display: flex;
   justify-content: center;
@@ -127,7 +126,6 @@
   background-color: #02356C;
   /* margin: 80px; */
   border-radius: 80px;
-  padding: 50px;
 }
 
 #carouselPersonalisedSvc {
