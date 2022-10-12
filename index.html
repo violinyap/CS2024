@@ -53,40 +53,42 @@
       </header>
 
       <!-- SECTION 1 -->
-      <div id="carouselExampleInterval" class="carousel slide home-banner" data-bs-ride="carousel">
-        <img src="./images/ellipse.svg" class="ellipse-banner">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="300000">
-            <div class="banner-wrapper">
-              <div class="banner-left">
-                <h1 class="beige">Get a Loan, Worry Free</h1>
-                <h1 class="white">You Deserve that Break!</h1>
-                <p class="white">Make your dream vacation come true with our special vacation loan, just for you.
-                  Enjoy our fast and reliable service now with 0 hidden cost.</p>
-                <div class="banner-button">
-                  <button class="primarybutton" onclick="location.href='profile.html'" type="button">
-                    Find Out More
-                  </button>
-                  <button class="primarybutton-white" onclick="location.href='profile.html'" type="button">
-                    Apply Now
-                  </button>
+      <div class="banner-section">
+        <div id="carouselExampleInterval" class="carousel slide home-banner" data-bs-ride="carousel">
+          <img src="./images/ellipse.svg" class="ellipse-banner">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="300000">
+              <div class="banner-wrapper">
+                <div class="banner-left">
+                  <h1 class="beige">Get a Loan, Worry Free</h1>
+                  <h1 class="white">You Deserve that Break!</h1>
+                  <p class="white">Make your dream vacation come true with our special vacation loan, just for you.
+                    Enjoy our fast and reliable service now with 0 hidden cost.</p>
+                  <div class="banner-button">
+                    <button class="primarybutton" onclick="location.href='services.html'" type="button">
+                      Find Out More
+                    </button>
+                    <button class="primarybutton-white" onclick="location.href='apply.html'" type="button">
+                      Apply Now
+                    </button>
+                  </div>
+                </div>
+                <div class="banner-right">
+                  <img class="banner-img"/>
                 </div>
               </div>
-              <div class="banner-right">
-                <img class="banner-img"/>
-              </div>
-            </div>
 
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
       <!-- SECTION 2 -->
@@ -136,7 +138,7 @@
       <div class="home-services">
         <div class="home-services-box">
           <h1 class="white">Our Personalised Services</h1>
-          <div id="carouselPersonalisedSvc" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselPersonalisedSvc" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="home-services-cards">
@@ -215,11 +217,13 @@
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPersonalisedSvc" data-bs-slide="prev">
+          </div>
+          <div class="svc-buttons">
+            <button class="primarybutton" type="button" data-bs-target="#carouselPersonalisedSvc" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPersonalisedSvc" data-bs-slide="next">
+            <button class="primarybutton" type="button" data-bs-target="#carouselPersonalisedSvc" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -273,6 +277,7 @@
             </td>
           </tr>
         </table>
+        <button class="primarybutton">Apply now</button>
       </div>
 
     <!--BODY WRAPPER END  -->

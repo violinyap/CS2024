@@ -1,7 +1,7 @@
 body {
   margin: auto;
   width: 100vw;
-  width: 1280px;
+  /* width: 1280px; */
   min-height: 100vh;
   overflow-x: hidden;
   font-family: 'Public Sans', arial, sans-serif;
@@ -56,6 +56,10 @@ p {
   color: white;
   border: none;
   transition: ease-in-out all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .primarybutton:hover {
   color:white;
@@ -73,6 +77,10 @@ p {
   border: none;
   /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primarybutton-white:hover {

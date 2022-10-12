@@ -1,0 +1,31 @@
+.apply-wrapper {
+  background: linear-gradient(180deg, #4C6085 0%, #02356C 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-links {
+  width: 100%;
+  color:white;
+  display: flex;
+  justify-content: end;
+  padding: 10px 0px;
+}
+
+.apply-links > a {
+  margin: 0px 20px;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: white;
+  /* margin: 80px; */
+  border-radius: 50px;
+  padding: 50px;
+  width: 80%;
+}

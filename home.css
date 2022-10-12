@@ -1,8 +1,12 @@
 
-.home-banner {
-  height: 620px;
-  position: relative;
+.banner-section {
   background: linear-gradient(1.36deg, #02356C 8.45%, #4C6085 76.89%);
+  position: relative;
+}
+.home-banner {
+  width: 1280px;
+  height: 620px;
+  margin: auto;
 }
 
 .ellipse-banner {
@@ -110,7 +114,6 @@
 .home-services {
   /* background-color: #E8F5FF; */
   width: 100%;
-  height: 100vh;
   padding: 80px;
   display: flex;
   justify-content: center;
@@ -120,12 +123,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-evenly;
   background-color: #02356C;
   /* margin: 80px; */
-  border-radius: 50px;
+  border-radius: 80px;
   padding: 50px;
-  min-height: 600px;
 }
 
 #carouselPersonalisedSvc {
@@ -140,10 +142,29 @@
   margin: 0 20px;
 }
 
+.svc-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.svc-buttons > button {
+  width: 80px;
+  margin: 20px 10px;
+}
+
 .svc-card {
   width: 30%;
   margin: 0;
 }
+
+.card > img {
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+}
+
+
+
+
 
 .home-steps {
   /* background: linear-gradient(180deg, #E8F5FF 0%, #FFF 100%); */
