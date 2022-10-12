@@ -1,11 +1,14 @@
 body {
-  margin: 0px;
+  margin: auto;
   width: 100vw;
-  min-width: 1280px;
+  width: 1280px;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: 'Public Sans', arial, sans-serif;
   color:#02356C;
+  background: linear-gradient(-45deg, #4C6085, #E8F5FF, #F5E9C2, #A5D0F0, #4C6085);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 /* TEXT STYLES */
@@ -18,6 +21,12 @@ h1 {
 h2 {
   font-family: 'Public Sans', sans-serif;
   font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -79,130 +88,4 @@ p {
   width: 100%;
   height: 100px;
   background-color: white;
-}
-
-.home-banner {
-  height: 700px;
-  position: relative;
-  background: linear-gradient(1.36deg, #02356C 8.45%, #4C6085 76.89%);
-}
-
-.ellipse-banner {
-  position: absolute;
-  left: -200px;
-  top: -20px;
-  z-index: 0;
-}
-
-.banner-wrapper {
-  /* display: flex; */
-  position: relative;
-  /* padding: 80px; */
-  height: 100%;
-}
-
-.banner-left {
-  /* flex: 2; */
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  width: 700px;
-  height: 200px;
-
-  top: 200px;
-  left: 100px;
-
-}
-.banner-right {
-  /* flex: 1; */
-  /* background-color: red; */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 80px 80px 0 0;
-  /* position: relative; */
-}
-
-.banner-img {
-  /* position: absolute; */
-  background-color: grey;
-  width: 335px;
-  height: 480px;
-  right: -100px;
-}
-
-.banner-button {
-  width: 320px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-about {
-  display: flex;
-  padding: 80px;
-}
-
-.home-about-left {
-  flex: 1;
-  height: 100%;
-}
-
-#home-about-par {
-  margin-top: 50px;
-}
-
-.home-about-right {
-  flex: 1;
-  height: 100%;
-  padding-left: 50px;
-  width: 700px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-
-.home-box {
-  width: 250px;
-  height: 250px;
-  background-color: #02356C;
-  color: white;
-  border-radius: 50px;
-  margin: 0 10px 20px 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #02356C;
-  margin: 80px;
-  border-radius: 50px;
-  padding: 50px;
-}
-
-#carouselPersonalisedSvc {
-  width: 100%;
-}
-
-.home-services-cards {
-  display: flex;
-  flex-direction: row;
-}
-
-.svc-card {
-  width: 20%;
-  margin: 0;
 }
