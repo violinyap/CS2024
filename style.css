@@ -4,9 +4,11 @@ body {
   min-width: 1280px;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family:arial, sans-serif;
+  font-family: 'Public Sans', arial, sans-serif;
+  color:#02356C;
 }
 
+/* TEXT STYLES */
 h1 {
   font-family: 'Public Sans', sans-serif;
   font-size: 40px;
@@ -31,6 +33,45 @@ p {
   color: #F5E9C2;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* BUTTON STYLES */
+
+.primarybutton {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color:#02356C;
+  color: white;
+  border: none;
+  transition: ease-in-out all 0.3s;
+}
+.primarybutton:hover {
+  color:white;
+  background-color: #4C6085;
+  /* border: 3px solid #02356C; */
+  transition: ease-in-out all 0.3s;
+}
+
+.primarybutton-white {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  color:#02356C;
+  background-color: white;
+  border: none;
+  /* border: 3px solid #02356C; */
+  transition: ease-in-out all 0.3s;
+}
+
+.primarybutton-white:hover {
+  background-color:#4C6085;
+  color: white;
+  /* border: 3px solid #02356C; */
+  transition: ease-in-out all 0.3s;
+}
 /* HEADER STYLES */
 
 .navbar {
@@ -94,4 +135,74 @@ p {
   width: 335px;
   height: 480px;
   right: -100px;
+}
+
+.banner-button {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-about {
+  display: flex;
+  padding: 80px;
+}
+
+.home-about-left {
+  flex: 1;
+  height: 100%;
+}
+
+#home-about-par {
+  margin-top: 50px;
+}
+
+.home-about-right {
+  flex: 1;
+  height: 100%;
+  padding-left: 50px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+.home-box {
+  width: 250px;
+  height: 250px;
+  background-color: #02356C;
+  color: white;
+  border-radius: 50px;
+  margin: 0 10px 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #02356C;
+  margin: 80px;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+#carouselPersonalisedSvc {
+  width: 100%;
+}
+
+.home-services-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.svc-card {
+  width: 20%;
+  margin: 0;
 }
