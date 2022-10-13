@@ -63,20 +63,21 @@
         <p class="white">We will review your application within an hour and recommend you with the best personalised service.</p>
         <div class="apply-form">
           <table class="apply-table">
-              <form>
+              <form class="needs-validation">
               <tr class="apply-row">
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputName" class="form-label">Full Name (as per NRIC)</label>
-                    <input type="text" class="form-control" id="inputName" aria-describedby="helpName">
+                    <label for="inputName" class="form-label">Full Name (as per NRIC)*</label>
+                    <input type="text" class="form-control" id="inputName" aria-describedby="helpName" placeholder="Jane Doe" required>
+               
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
                 <td class="apply-col-gap"></td>
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputPhone" class="form-label">Monthly Income</label>
-                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpName">
+                    <label for="inputIncome" class="form-label">Monthly Income*</label>
+                    <input type="text" class="form-control" id="inputIncome" aria-describedby="helpIncome" placeholder="$123" required>
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
@@ -84,16 +85,27 @@
               <tr class="apply-row">
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputPhone" class="form-label">Contact Number</label>
-                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpName">
+                    <label for="inputPhone" class="form-label">Contact Number*</label>
+                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpPhone" placeholder="8765 4321" required>
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
                 <td class="apply-col-gap"></td>
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputPhone" class="form-label">Loan Type</label>
-                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpName">
+                    <label for="inputLoan" class="form-label">Loan Type*</label>
+                    <select class="form-select" id="inputLoan" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>Business Loan</option>
+                      <option>Education Loan</option>
+                      <option>Foreigner Loan</option>
+                      <option>Medical Loan</option>
+                      <option>Personal Loan</option>
+                      <option>Renovation Loan</option>
+                      <option>Vacation Loan</option>
+                      <option>Wedding Loan</option>
+                      <option>Others..</option>
+                    </select>
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
@@ -101,16 +113,16 @@
               <tr class="apply-row">
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="inputEmail" class="form-label">Email Address*</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="name@example.com"  required>
                     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
                 <td class="apply-col-gap"></td>
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputPhone" class="form-label">Remarks</label>
-                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpName">
+                    <label for="inputRemarks" class="form-label">Remarks</label>
+                    <input type="text" class="form-control" id="inputRemarks" aria-describedby="helpRemarks">
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
@@ -118,8 +130,8 @@
               <tr class="apply-row">
                 <td class="apply-col">
                   <div class="mb-3">
-                    <label for="inputPhone" class="form-label">Loan Amount</label>
-                    <input type="text" class="form-control" id="inputPhone" aria-describedby="helpName">
+                    <label for="inputAmount" class="form-label">Loan Amount</label>
+                    <input type="text" class="form-control" id="inputAmount" aria-describedby="helpAmount" placeholder="$123">
                     <!-- <div id="helpName" class="form-text">We'll never share your email with anyone else.</div> -->
                   </div>
                 </td>
@@ -135,7 +147,14 @@
                 <td colspan="3">
                   <div class="apply-submit">
                     <button type="submit" class="btn btn-primary primarybutton">Submit</button>
-                    <p> <strong>Your Privacy and Security, Protected.</strong> We take full measures to protect your identity. By submitting this form, you agree to be contacted with the information stated above. Your application is 100% confidential.</p>
+                    <div class="protect-text">
+                      <span class="material-symbols-outlined protect-icon">
+                      safety_check
+                      </span>
+                      <span> 
+                        <strong>Your Privacy and Security, Protected.</strong> We take full measures to protect your identity. By submitting this form, you agree to be contacted with the information stated above. Your application is 100% confidential.
+                      </span>
+                    </div>
                   </div>
                 </td>
               </tr>

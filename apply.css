@@ -60,3 +60,14 @@
 .apply-submit > button {
   margin: 20px 0;
 }
+
+.protect-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.protect-icon {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
