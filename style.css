@@ -134,7 +134,7 @@ p {
 }
 
 .container-fluid {
-  width: 100%;
+  width: 1280px;
 }
 .navbar-left {
   /* flex: 4; */
@@ -173,6 +173,9 @@ p {
   margin-right: 40px;
 }
 
+.navbar-dropdown {
+  left: 150px !important;
+}
 /* service.html banner */
 /* Container holding the image and the text */
 .container {
@@ -221,4 +224,12 @@ p {
 
 .foot-bottom {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.foot-bottom > p {
+  margin: 0;
 }
