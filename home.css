@@ -67,6 +67,7 @@
   justify-content: space-between;
 }
 
+/* SG MONEY LENDER */
 .home-about {
   clear: both;
   display: flex;
@@ -170,7 +171,7 @@
 	}
 }
 
-
+/* SERVICES */
 
 .home-services {
   /* background-color: #E8F5FF; */
@@ -242,9 +243,8 @@
 
 
 
-
+/* STEPS */
 .home-steps {
-  /* background: linear-gradient(180deg, #E8F5FF 0%, #FFF 100%); */
   clear: both;
   min-height: 700px;
   display: flex;
@@ -254,18 +254,6 @@
   position: relative;
 }
 
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 
 .application-steps {
@@ -337,9 +325,9 @@
   padding: 0 20px;
 }
 
+/* FAQ */
 .home-faq {
   display: flex;
-  /* flex-direction: center; */
   justify-content: center;
   padding: 80px;
   padding-bottom: 200px;
@@ -351,4 +339,27 @@
 }
 .faq-accordion {
   width: 100%;
+}
+
+/* CONTACT */
+
+.home-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  padding-bottom: 200px;
+  min-height: 600px;
+}
+.contact-box {
+  width: 900px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 50px;
+}
+.home-contact-right {
+  text-align: end;
+}
+
+#inputQuestions {
+  height: 200px;
 }
