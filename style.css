@@ -128,12 +128,60 @@ p {
 
 /* HEADER STYLES */
 
+.navbar-gap {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
 .navbar {
   z-index: 999;
   width: 100%;
   height: 100px;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+}
 
+.container-fluid {
+  width: 100%;
+}
+.navbar-left {
+  /* flex: 4; */
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  /* justify-content: space-evenly; */
+  padding-left: 80px;
+}
+
+.navbar-center {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-right {
+  /* flex: 4; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  padding-right: 40px;
+}
+
+.nav-link {
+  margin-right: 40px;
+}
+.nav-link:hover {
+  color:#4C6085;
+  text-decoration: underline;
+}
+
+#nav-apply {
+  margin-right: 40px;
 }
 
 /* service.html banner */
