@@ -153,6 +153,10 @@ p {
   z-index: 0;
 }
 
+.arrow-banner {
+  width: 100%;
+}
+
 .banner-wrapper {
   /* display: flex; */
   position: relative;
@@ -200,6 +204,27 @@ p {
   width: 320px;
   display: flex;
   justify-content: space-between;
+}
+
+/* service.html banner */
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered-sub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-about {
@@ -275,4 +300,3 @@ p {
 .foot-bottom {
   background-color: #FFFFFF;
 }
-
