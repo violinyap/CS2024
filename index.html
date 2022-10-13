@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- LOCAL CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./home.css" />
@@ -32,8 +32,13 @@
               <a class="nav-link" href="#">About</a>
 
           </div>
-          <div class="mx-auto order-0 navbar-center">
-            <a class="navbar-brand" href="#">SG Money Lender</a>
+          <div class="navbar-center">
+            <a class="navbar-brand" href="#">
+              <img src="images/sglogo.png" class="sglogoimg">
+              <h1 class="sglogoname">
+                <span>SG</span> <span class="midblue">Money Lender</span>
+              </h1>
+            </a>
           </div>
           <div class="navbar-right">
               <button class="primarybutton" onclick="location.href='apply.html'" type="button" id="nav-apply">
@@ -112,26 +117,36 @@
       <div class="home-about">
         <div class="home-about-title">
           <h1>SG Money Lender</h1>
-          <p>providing competitive credit services to the public</p>
+          <p>Professional credit services firm since 2012</p>
         </div>
         <img src="images/wave.png" class="wave-img">
         <img src="images/think.png" class="think-img">
         <div class="home-about-right">
           <div class="home-box lightbluebox" id="box1">
-            <h1>12</h1>
-            <h3>Reliable</h3>
+            <h1>10 yrs</h1>
+            <h3>Professional Experience</h3>
           </div>
           <div class="home-box" id="box2">
-            <h1>12</h1>
-            <h3>Service Excellence</h3>
+            <h1>$120m</h1>
+            <h3>Total Granted</h3>
           </div>
           <div class="home-box lightbluebox" id="box3">
-            <h1>12</h1>
-            <h3>Professional</h3>
+            <h1>11,292</h1>
+            <h3>Clients</h3>
           </div>
           <div class="home-box" id="box4">
-            <h1>12</h1>
-            <h3>Simple</h3>
+            <h1>$0</h1>
+            <h3>Hidden Cost</h3>
+          </div>
+          <div class="home-box lightbluebox" id="box5">
+            <span class="material-symbols-outlined circle-icon">
+              currency_exchange
+            </span>              
+          </div>
+          <div class="home-box" id="box6">
+            <span class="material-symbols-outlined circle-icon">
+              real_estate_agent
+            </span> 
           </div>
         </div>
 
@@ -240,50 +255,61 @@
 
       <div class="home-steps">
         <h1>Complete Your Loan</h1>
-        <h1>Application In 3 Steps</h1>
+        <h1>Application In <u>3 Simple Steps</u>!</h1>
         <table class="application-steps">
           <div class="steps-line"></div>
           <tr class="steps-row">
             <td class="steps-col steps-left">
+              <h1 class="midblue"></h1>
             </td>
             <td class="steps-col steps-icon">
               <div class="steps-circle">
-                ICON
+                <span class="material-symbols-outlined icon-step">
+                  fact_check
+                </span>
               </div>
             </td>
             <td class="steps-col steps-right">
               <h3>Fill up an application form</h3>
-              <p>It takes an estimated 5 minutes to complete.</p>
+              <p>It takes estimated 5 minutes to complete.</p>
             </td>
           </tr>
           <tr class="steps-row">
             <td class="steps-col steps-left">
-              <h3>Fill up an application form</h3>
-              <p>It takes an estimated 5 minutes to complete.</p>
+              <h3>Receive application result and make appointment</h3>
+              <p>Our loan officer will contact you within 24 hour upon form submission.</p>
             </td>
             <td class="steps-col steps-icon">
               <div class="steps-circle">
-                ICON
+                <span class="material-symbols-outlined icon-step">
+                  approval_delegation
+                  </span>
+                  
               </div>
             </td>
             <td class="steps-col steps-right">
+              <h1 class="midblue"></h1>
             </td>
           </tr>
           <tr class="steps-row">
             <td class="steps-col steps-left">
+              <h1 class="midblue"></h1>
             </td>
             <td class="steps-col steps-icon">
               <div class="steps-circle">
-                ICON
+                <span class="material-symbols-outlined icon-step">
+                  payments
+                </span>
               </div>
+
             </td>
             <td class="steps-col steps-right">
-              <h3>Fill up an application form</h3>
-              <p>It takes an estimated 5 minutes to complete.</p>
+              <h3>Sign agreement and get your cash</h3>
+              <p>Confirm your loan contract and get your money without any delay.</p>
             </td>
           </tr>
         </table>
-        <button class="primarybutton" id="steps-button">Start Your Application</button>
+        <button class="primarybutton" id="steps-button"  onclick="location.href='apply.html'" >Start Your Application</button>
       </div>
 
 
@@ -300,36 +326,90 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
+                Can I apply for a loan? Am I eligible for a loan?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong> SG Money Lender welcomes everyone </strong> and we strive to create the best loan plan for all. <br/>
+                Regardless if you are employed or self-employed, you are eligible for a loan as long as you are 18 years old and above. 
+                We are confident that we will be able to assist you professionally in providing a suitable loan solution which specially caters to your needs.
+                
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
+                What are the interest rates charged by licensed moneylenders in Singapore?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Legal moneylenders such as SG Money Lender abide by the rules set by the Ministry of Law:
+                <ul>
+                  <li>Licensed moneylenders are not allowed to charge a fee exceeding $60 for each month of late repayment.</li>
+                  <li>Licensed moneylenders should not charge a fee exceeding 10% of the principal loan amount.</li>
+                </ul>
+                The maximum rate of interest they can charge is 4% per month. For late repayment, the maximum rate of late interest is 4% for each overdue month.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
+                How much money can I borrow?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>For Singaporeans and Permanent Residents (PRs):</strong>
+                <ul>
+                  <li> If your annual income is less than $20,000, you can borrow up to $3,000. </li>
+                  <li> If your annual income is $20,000 and above, you can borrow up to 6 times of your monthly income.</li>
+                </ul>
+                <strong>For foreigners:</strong> 
+                <ul>
+                  <li> If your annual income is less than $10,000, you may borrow up to $500.</li>
+                  <li> If your annual income is at least $10,000, but less than $20,000, you may borrow up to $3,000.</li>
+                  <li> If your annual income is at least $20,000, you can borrow up to 6 times of your monthly income.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                What documents do I need to prepare for my loan application?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <strong>For Singaporeans and Permanent Residents (PRs), please prepare your:</strong>
+                <ul>
+                  <li> NRIC / Proof of identity </li>
+                  <li> CPF / Bank statements / Income Proof</li>
+                </ul>
+                <strong>For foreigners, please prepare your:</strong> 
+                <ul>
+                  <li> Work permit / S Pass / E Pass</li>
+                  <li> Address / Proof of Residence / Phone Bills / Utility Bills </li>
+                  <li> Bank statements / Income proof</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                How fast is your loan application process?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                We have streamlined our loan application process. It takes only <strong>5 minutes</strong> to apply for a loan with us. 
+                Once your loan has been approved, we are able to give you your cash on the spot. There is no waiting time.
+                
               </div>
             </div>
           </div>
