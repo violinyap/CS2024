@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SG Money Lender</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- GOOGLE FONTS -->
@@ -11,42 +13,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- LOCAL CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./services.css" />
   </head>
-
   <body>
     <div class="wrapper">
-
       <header class="web-navbar">
         <nav class="navbar">
           <div class="navbar-left">
             <a class="nav-link" aria-current="page" href="/">Home</a>
 
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+              <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <ul class="dropdown-menu navbar-dropdown">
-                <li><a class="dropdown-item" href="#">Vacation Loans</a></li>
-                <li><a class="dropdown-item" href="#">Renovation Loans</a></li>
-                <li><a class="dropdown-item" href="#">Personal Loans</a></li>
+                <li><a class="dropdown-item" href="services.html#vacation">Vacation Loans</a></li>
+                <li><a class="dropdown-item" href="services.html#renovation">Renovation Loans</a></li>
+                <li><a class="dropdown-item" href="services.html#personal">Personal Loans</a></li>
               </ul>
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/#about">About</a>
 
           </div>
-          <div class="mx-auto order-0 navbar-center">
-            <a class="navbar-brand" href="#">SG Money Lender</a>
+          <div class="navbar-center">
+            <a class="navbar-brand" href="#">
+              <img src="images/sglogo.png" class="sglogoimg">
+              <h1 class="sglogoname">
+                <span>SG</span> <span class="midblue">Money<br/>Lender</span>
+              </h1>
+            </a>
           </div>
           <div class="navbar-right">
               <button class="primarybutton" onclick="location.href='apply.html'" type="button" id="nav-apply">
                 Apply Now
               </button>
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="/#faq">FAQ</a>
           </div>
         </nav>
       </header>
 
       <div class="navbar-gap"></div>
+
 
 
 
@@ -64,7 +70,7 @@
       <div class = "svc-section">
         <div class="home-about">
           <div class="row">
-
+            <a id="personal"></a>
             <div class="home-about-right">
               <div class="row">
                 <div class="double-box">
@@ -87,7 +93,7 @@
                 </div>
               </div>
             </div>
-
+            <a id="vacation"></a>
             <div class="home-about-left">
               <div class="row">
                 <h1>Vacation Loans</h1>
@@ -103,6 +109,7 @@
                     <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
                 </div>
               </div>
+              <a id="wedding"></a>
               <div class="row">
                 <h1><br><br>Wedding Loans</h1>
                 <p class="svc-about-par">
