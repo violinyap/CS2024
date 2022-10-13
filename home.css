@@ -271,3 +271,19 @@
   width: max-content;
   padding: 0 20px;
 }
+
+.home-faq {
+  display: flex;
+  /* flex-direction: center; */
+  justify-content: center;
+  padding: 80px;
+  padding-bottom: 200px;
+  min-height: 600px;
+}
+
+.faq-header {
+  margin-right: 80px;
+}
+.faq-accordion {
+  width: 100%;
+}
