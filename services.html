@@ -18,24 +18,25 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./services.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header class="web-navbar">
         <nav class="navbar">
           <div class="navbar-left">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 
-              <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <ul class="dropdown-menu navbar-dropdown">
                 <li><a class="dropdown-item" href="services.html#vacation">Vacation Loans</a></li>
                 <li><a class="dropdown-item" href="services.html#renovation">Renovation Loans</a></li>
                 <li><a class="dropdown-item" href="services.html#personal">Personal Loans</a></li>
               </ul>
-              <a class="nav-link" href="/#about">About</a>
+              <a class="nav-link" href="#about">About</a>
 
           </div>
           <div class="navbar-center">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
               <img src="images/sglogo.png" class="sglogoimg">
               <h1 class="sglogoname">
                 <span>SG</span> <span class="midblue">Money<br/>Lender</span>
@@ -54,11 +55,9 @@
       <div class="navbar-gap"></div>
 
 
-
-
       <!-- SECTION 1 -->
       <div class = "svc-section">
-        <div class="arrow-home-banner">
+        <div class="home-banner">
         </div>
         <img src="./images/top photo.svg" class="arrow-banner" alt="Responsive image">
         <h1 class="white centered">Compare and Shop <br>For Loans</h1>
@@ -67,72 +66,146 @@
       </div>
 
       <!-- SECTION 2 -->
-      <div class = "svc-section">
-        <div class="home-about">
+      <a id="about"></a>
+      <div class="svc-about">
+        <div class="container">
           <div class="row">
-            <a id="personal"></a>
-            <div class="home-about-right">
-              <div class="row">
-                <div class="double-box">
-                  <img src="./images/double box.svg" alt="double box image">
-                  <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
-                </div>
-              </div>
-              <div class="row">
-                <h1><br><br>Personal Loans</h1>
-                <p class="svc-about-par">
-                  We offer a Personal Loan with fixed monthly repayments for both Singaporeans and foreigners.
-                  <br><br>Singaporeans need a minimum annual income of $20,000 to qualify while foreigners need to be earning at least $45,000 annually. You can borrow up to 6 times of your monthly salary.
-                  <br><br>Loan repayment period ranges from 12 to 60 months with fixed and regular monthly repayments, providing flexibility to the borrowers. Repayments can be done conveniently via online platforms, mobile banking, cheque deposit or at cash deposit machines.<br><br><br><br>
-                </p>
-              </div>
-              <div class="row">
-                <div class="double-box">
-                  <img src="./images/double box.svg" alt="double box image">
-                  <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
-                </div>
+            <div class="col">
+              <div class="double-box">
+                <img src="./images/double box.svg" alt="double box image">
+                <img src="./images/personal loan.jpg" alt="personal loan image" class="img-double-box">
               </div>
             </div>
-            <a id="vacation"></a>
-            <div class="home-about-left">
-              <div class="row">
-                <h1>Vacation Loans</h1>
-                <p class="svc-about-par">
-                  Everyone has a dream vacation destination they would love to visit in their lifetime.<br><br>
-                  Living in Singapore, this could be within the region or even Europe, Africa or America. Whether you want to enjoy some time on the beach in the Caribbean or some sun soaking in the sun in Morocco, you have to consider the cost.
-                  <br>This is where a vacation loan from SGMoneyLender comes in to save your day with one of the lowest interest in town.
-                </p>
+            <div class="col">
+              <h1>Personal Loans</h1>
+              <p class="svc-about-par">
+                We offer a Personal Loan with fixed monthly repayments for both Singaporeans and foreigners.
+                <br><br>Singaporeans need a minimum annual income of $20,000 to qualify while foreigners need to be earning at least $45,000 annually. You can borrow up to 6 times of your monthly salary.
+                <br><br>Loan repayment period ranges from 12 to 60 months with fixed and regular monthly repayments, providing flexibility to the borrowers. Repayments can be done conveniently via online platforms, mobile banking, cheque deposit or at cash deposit machines.<br><br><br><br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1>Vacation Loans</h1>
+              <p class="svc-about-par">
+                Everyone has a dream vacation destination they would love to visit in their lifetime.<br><br>
+                Living in Singapore, this could be within the region or even Europe, Africa or America. Whether you want to enjoy some time on the beach in the Caribbean or some sun soaking in the sun in Morocco, you have to consider the cost.
+                <br>This is where a vacation loan from SGMoneyLender comes in to save your day with one of the lowest interest in town.<br><br><br><br>
+              </p>
+            </div>
+            <div class="col">
+              <div class="double-box-light">
+                  <img src="./images/double box light.svg" alt="double box light image">
+                  <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
               </div>
-              <div class="row">
-                <div class="double-box-light">
-                    <img src="./images/double box light.svg" alt="double box light image">
-                    <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
-                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="double-box">
+                <img src="./images/double box.svg" alt="double box image">
+                <img src="./images/wedding loans.jpeg" alt="wedding image" class="img-double-box">
               </div>
-              <a id="wedding"></a>
-              <div class="row">
-                <h1><br><br>Wedding Loans</h1>
-                <p class="svc-about-par">
+            </div>
+            <div class="col">
+              <h1>Wedding Loans</h1>
+              <p class="svc-about-par">
                 A wedding is a big party which calls for big-name expenses for the bridal train, venue, catering, flowers, event photography, media coverage, and the wedding coordinator. A great marriage loan avails you of the opportunity to pay for those mounting expenses in a convenient manner.<br><br>
-                  Our goal is to make your wedding loan application in Singapore process quicker, simpler and more transparent. As Singapore’s only true personal loan comparison service, we support you all the way from application to disbursement.
-                  <br><br>Click below to read more about SGMoneyLender and how we empower thousands of loan-seeking Singaporeans every month.
-    
-                </p>
+                Our goal is to make your wedding loan application in Singapore process quicker, simpler and more transparent.<br><br><br><br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1>Medical Loans</h1>
+              <p class="svc-about-par">
+                In times of a medical emergency, securing funds should be a quick and simple process. This is where a medical loan can come in handy.
+                A medical loan is intended to specifically fund your medical costs that cannot be covered by your health insurance. They cater for scheduled or emergency surgical procedures, necessary medical procedures, medical debt consolidation, or any other medical cost that may arise.<br><br>
+                A medical loan from SGMoneyLender can help to ease the burden of your medical costs, so that you can fully concentrate on what matters most: your health. <br><br><br><br>
+              </p>
+            </div>
+            <div class="col">
+              <div class="double-box-light">
+                  <img src="./images/double box light.svg" alt="double box light image">
+                  <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
               </div>
             </div>
-
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="double-box">
+                <img src="./images/double box.svg" alt="double box image">
+                <img src="./images/wedding loans.jpeg" alt="wedding image" class="img-double-box">
+              </div>
+            </div>
+            <div class="col">
+              <h1>Education Loans</h1>
+              <p class="svc-about-par">
+                By taking on an education loan, it allows you to upgrade your skills and get better qualifications. With the new certificates, you can command a higher salary and increase your job opportunities.<br><br>
+                In a competitive country like Singapore, having a diploma is the minimum standard. Regardless if you are planning to study overseas, to get a diploma or a degree, SGMoneyLender’s education loan can be customized to help you. We understand the situation and are able to offer lower interest rates for our education loans. Find out more today!<br><br><br><br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1>Business Loans</h1>
+              <p class="svc-about-par">
+                Starting and running a business in Singapore is tough. Things have not been made easier by the global uncertainties and the economic slowdown in China. Faced with other global shifts such as Brexit, businesses in the country have an even harder time today.<br><br>
+                At SGMoneyLender, we are determined to help businesses meet their goals through our flexible business loans. Our mission is to give a boost to businesses in the country to expand and optimize their operations through easy financing. Our loans for businesses are suitable for any industry including technology, healthcare, restaurants, manufacturing among others.<br><br><br><br>
+              </p>
+            </div>
+            <div class="col">
+              <div class="double-box-light">
+                  <img src="./images/double box light.svg" alt="double box light image">
+                  <img src="./images/business loan.jpeg" alt="business image" class="img-double-box">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="double-box">
+                <img src="./images/double box.svg" alt="double box image">
+                <img src="./images/foreigner loan.jpg" alt="foreigner image" class="img-double-box">
+              </div>
+            </div>
+            <div class="col">
+              <h1>Foreigner Loans</h1>
+              <p class="svc-about-par">
+                It’s tough enough financing your trip and lodging into Singapore. It’s even tougher when you are all alone without help from your family and friends back home, knowing that they are counting on you to help them out.<br><br>
+                When you are in financial hardship and looking for someone to turn to, banks might not be the place for you when you have no credit history with them or the ability to wait for long periods of time for your loans to be approved.<br><br>
+                That’s why SGMoneyLender provides foreigner loan services without any need for your previous credit history.<br><br><br><br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1>Renovation Loans</h1>
+              <p class="svc-about-par">
+                Instead of over-exerting your savings and using it all up for a home renovation, it might be wise to consider the option of a home renovation loan. Not only does it help to ease your financial burden, but it also ensures that you won’t be exhausting your savings that you may have set aside for emergencies.<br><br>
+                The upside of applying for a home renovation loan with SGMoneyLender is that there isn’t a minimum salary requirement. This means that as long as you’re able to prove that you have a steady and stable source of income every month, you’ll more or less be approved for the loan. It’s easy to give your home a new breath of life!<br><br><br><br>
+              </p>
+            </div>
+            <div class="col">
+              <div class="double-box-light">
+                  <img src="./images/double box light.svg" alt="double box light image">
+                  <img src="./images/vacation loans.jpg" alt="vacation image" class="img-double-box">
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <!-- SECTION 4 -->
+
+
+      <!-- SECTION 3 -->
       <div class = "svc-section">
           <img src="./images/bottom arrow.svg" class="bottom-triangle" alt="bottom arrow">
             <img src="./images/clock hand.png" class="clock-hand" alt="clock hand">
-            <img src="./images/clock hand.png" class="clock-hand-min" alt="clock hand min">
+            <!-- <img src="./images/clock hand.png" class="clock-hand-min" alt="clock hand min"> -->
         </div>
       </div>
-
 
       <!-- FOOTER -->
       <footer>
