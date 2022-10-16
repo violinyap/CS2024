@@ -253,7 +253,7 @@
     }
 }
 
-.clock-hand-min{
+/* .clock-hand-min{
   position: absolute;
   width: 400px;
   height: 500px;
@@ -261,12 +261,40 @@
   top: 320px;
 
   transform: rotate(-61.98deg);
-}
+} */
 
 
 .svc-section{
 position: relative;
 }
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+
+}
+
+/* review  */
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
 /* FOOTER STYLES */
 .foot-top {
   background-color: #4C6085;
@@ -275,4 +303,9 @@ position: relative;
 
 .foot-bottom {
   background-color: #FFFFFF;
+}
+
+/* clock */
+.clock-title {
+  text-align: center;
 }
