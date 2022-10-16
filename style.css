@@ -81,7 +81,6 @@ p {
 .primarybutton:hover {
   color:white;
   background-color: #4C6085;
-  /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
 }
 
@@ -92,7 +91,6 @@ p {
   color:#02356C;
   background-color: white;
   border: none;
-  /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
 
   display: flex;
@@ -103,7 +101,6 @@ p {
 .primarybutton-white:hover {
   background-color:#4C6085;
   color: white;
-  /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
 }
 
@@ -120,14 +117,12 @@ p {
 .nav-primarybutton:hover {
   color:white;
   background-color: #4C6085;
-  /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
 }
 
 .foot-button:hover {
   background-color:#02356C;
   color: white;
-  /* border: 3px solid #02356C; */
   transition: ease-in-out all 0.3s;
 }
 
@@ -149,20 +144,21 @@ p {
   position: fixed;
 }
 
+.dropdown-item:hover {
+  background-color: #A5D0F0;
+}
+
 .container-fluid {
   width: 1280px;
 }
 .navbar-left {
-  /* flex: 4; */
   display: flex;
   flex-direction: row;
   width: 40%;
-  /* justify-content: space-evenly; */
   padding-left: 80px;
 }
 
 .navbar-brand {
-  /* flex: 1; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,7 +178,6 @@ p {
 }
 
 .navbar-right {
-  /* flex: 4; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
