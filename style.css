@@ -216,14 +216,18 @@ p {
   justify-content: space-between;
 }
 
+
+
 .footer-left {
   width: 40%;
+  clear: both;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
 }
-.footer-apply {
 
-}
 .footer-contact {
   width: 40%;
    display: flex;
@@ -242,3 +246,29 @@ p {
 .foot-bottom > p {
   margin:0;
 }
+
+.sglogoname-white {
+  color: white;
+  font-size: 24px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.footer-email {
+  transition: ease-in-out all 0.3s;
+}
+.footer-email:hover {
+  color: #A5D0F0;
+  transition: ease-in-out all 0.3s;
+}
+
+.privacy-pol {
+  cursor: pointer;
+  color: #02356C;
+  text-decoration: none;
+}
+
+.privacy-pol:hover {
+  text-decoration: underline;
+}
+
