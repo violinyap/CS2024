@@ -196,6 +196,7 @@
   display: flex;
   justify-content: center;
   padding: 0 80px 80px 80px;
+  margin-bottom: 100px;
 }
 
 .svc-news-box {
@@ -223,45 +224,6 @@
   justify-content: space-evenly;
 }
 
-/* clock_hand_minute2_pc_800_wht-removebg-preview 1 */
-.clock-hand{
-  position: absolute;
-  width: 439px;
-  height: 568px;
-  left: 420px;
-  top: 300px;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-  transform: rotate(71.9deg);
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-
-
-.svc-section{
-position: relative;
-}
-
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-
-}
 
 /* review  */
 .testimonial-card {
